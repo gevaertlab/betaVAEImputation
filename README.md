@@ -6,20 +6,30 @@ The scripts contained in this repository can be used to carry out the analysis i
 
 **Imputation**
 
-1. VAE imputation  
-python train_beta_VAE.py --config example_config_VAE.json  
-python test_beta_VAE.py --config example_config_VAE.json  
+1. **VAE imputation**  
+   ```bash
+   python train_beta_VAE.py --config example_config_VAE.json
+   python test_beta_VAE.py --config example_config_VAE.json
+   ```  
 2. KNN imputation  
-python test_KNN.py --config example_config_KNN.json  
-3. SVD imputation  
-python test_SVD.py --config example_config_SVD.json
+   ```bash
+   python test_KNN.py --config example_config_KNN.json
+   ```
+3. SVD imputation
+   ```bash
+   python test_SVD.py --config example_config_SVD.json
+   ```
 
 **Compare clinical correlations**
 
 1. Spearman correlation to histologic grade  
-python cindex_spearman_cor.py
+   ```bash
+   python cindex_spearman_cor.py
+   ```
 
-2. Cox regression coefficient to survival  
-Rscript find_cox_coeff.R  
-python cindex_cox_coeff.py
-
+2. Cox regression coefficient to survival
+   ```bash
+   Rscript find_cox_coeff.R  
+   python cindex_cox_coeff.py
+   ```
+   
